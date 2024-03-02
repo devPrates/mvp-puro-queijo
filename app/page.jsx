@@ -1,10 +1,9 @@
-import { Button } from "@/components/ui/button"
+import { Header } from "@/components/header/header";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-      <h1>Home page</h1>
-      <Button>Button</Button>
+      <Header />
 
     </main>
   );

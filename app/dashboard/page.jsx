@@ -1,6 +1,13 @@
+import CardInfo from "@/components/dashboard/cardInfo"
+
+  
 const Dashboard = () => {
     return (
-        <h1>Dashboard</h1>
+        <section>
+            <h1>Dashboard</h1>
+            <CardInfo title="Usuarios cadastrados" info="50 usuarios cadastrados"/>
+        </section>
+
     )
 }
 

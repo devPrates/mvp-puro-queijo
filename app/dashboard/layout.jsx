@@ -24,20 +24,24 @@ const Layout = ({ children }) => {
                 <Link href="/dashboard" className={`${pathname === "/dashboard" ? "text-cyan-300" : ""}`}>
                     <SidebarItem icon={<LayoutDashboard size={20} />} text="Dashboard"/>
                 </Link>
+                <Link href="/dashboard/infos" className={`${pathname === "/dashboard/infos" ? "text-cyan-300" : ""}`}>
+                    <SidebarItem icon={<BarChart3 size={20} />} text="Dados" />
+                </Link>
                 <Link href="/dashboard/users" className={`${pathname === "/dashboard/users" ? "text-cyan-300" : ""}`}>
-                    
                     <SidebarItem icon={<UserCircle size={20} />} text="Usuarios" />
                 </Link>
-                <SidebarItem icon={<BarChart3 size={20} />} text="Dados" />
-                <SidebarItem icon={<Boxes size={20} />} text="Inventario" />
-                <SidebarItem icon={<Package size={20} />} text="Produtos" />
+                <Link href="/dashboard/products" className={`${pathname === "/dashboard/products" ? "text-cyan-300" : ""}`}>
+                    <SidebarItem icon={<Package size={20} />} text="Produtos" />
+                </Link>
+                <Link href="/dashboard/posts" className={`${pathname === "/dashboard/posts" ? "text-cyan-300" : ""}`}>
+                    <SidebarItem icon={<Boxes size={20} />} text="Publicações" />
+                </Link>
                 <SidebarItem icon={<Receipt size={20} />} text="Finaças" alert/>
-                <hr className="my3" />
+                <hr className="my3 mb-4" />
                 <SidebarItem icon={<Settings size={20} />} text="Configurações" />
                 <SidebarItem icon={<LifeBuoy size={20} />} text="Help" />
-
             </Sidebar>
-            <div className="py-7 px-10">
+            <div className="w-full">
                 {children}
             </div>
         </section>

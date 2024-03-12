@@ -1,8 +1,8 @@
+import TitleDashboard from "@/components/dashboard/TitleDashboard"
+
 const Users = () => {
     return (
-        <h1>
-            pagina de usuarios
-        </h1>
+        <TitleDashboard title="Usuarios Cadastrados" />
     )
 }
 

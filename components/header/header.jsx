@@ -10,7 +10,7 @@ export const Header = () => {
         setMenuOpen(!menuOpen);
     }
     return(
-            <nav className="fixed w-full h-24 shadow-xl bg-gray-300">
+            <nav className="w-full h-24 shadow-xl bg-gray-300">
                 <div className="container flex justify-between items-center h-full w-full px-4 2xl:px16">
                     <Link href="/">
                         <Image 

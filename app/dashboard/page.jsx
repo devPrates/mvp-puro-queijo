@@ -13,9 +13,9 @@ import { Contact } from 'lucide-react';
 
 const Dashboard = () => {
     return (
-        <section>
+        <section className="flex flex-col gap-4 ">
             <Navbar title="Dashboard" />
-            <div className="p-3">
+            <div className="px-16">
                 <Breadcrumb>
                     <BreadcrumbList>
                         <BreadcrumbItem>

@@ -10,8 +10,8 @@ export default function Sidebar({ children }) {
     
     return (
       <aside className="h-screen">
-        <nav className="h-full flex flex-col bg-white border-r shadow-sm">
-          <div className="p-4 pb-2 flex justify-between items-center">
+        <nav className="h-full flex flex-col bg-gray-800 text-white shadow-sm">
+          <div className="p-4 mt-2 pb-2 flex justify-between items-center">
             <img
               src="https://img.logoipsum.com/243.svg"
               className={`overflow-hidden transition-all ${
@@ -23,12 +23,12 @@ export default function Sidebar({ children }) {
               onClick={() => setExpanded((curr) => !curr)}
               className="p-1.5 rounded-lg bg-gray-50 hover:bg-gray-100"
             >
-              {expanded ? <ChevronFirst /> : <ChevronLast />}
+              {expanded ? <ChevronFirst className="text-black" /> : <ChevronLast className="text-black" />}
             </button>
           </div>
   
           <SidebarContext.Provider value={{ expanded }}>
-            <ul className="flex-1 px-3">{children}</ul>
+            <ul className="flex-1 px-3 py-6">{children}</ul>
           </SidebarContext.Provider>
   
           <div className="border-t flex p-3">
@@ -47,7 +47,7 @@ export default function Sidebar({ children }) {
                 <h4 className="font-semibold">John Doe</h4>
                 <span className="text-xs text-gray-600">johndoe@gmail.com</span>
               </div>
-              <MoreVertical size={20} />
+              <MoreVertical className="text-white" size={20} />
             </div>
           </div>
         </nav>
@@ -62,9 +62,7 @@ export default function Sidebar({ children }) {
     return (
       <li
         className={`
-          relative flex items-center py-2 px-3 my-1
-          font-medium rounded-md cursor-pointer
-          transition-colors group hover:bg-indigo-50
+          relative flex items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer group hover:bg-indigo-300 hover:text-black
       `}
       >
         {icon}

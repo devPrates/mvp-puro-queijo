@@ -9,9 +9,9 @@ import {
 
 const Infos = () => {
     return (
-        <section>
+        <section className="flex flex-col gap-4 ">
              <Navbar title="Dados do Website" />
-            <div className="p-3">
+            <div className="px-16">
                 <Breadcrumb>
                     <BreadcrumbList>
                         <BreadcrumbItem>

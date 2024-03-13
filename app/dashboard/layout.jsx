@@ -16,7 +16,6 @@ import {
 
 const Layout = ({ children }) => {
     const pathname = usePathname()
-    console.log(pathname)
     return (
         <>
         <section className="flex">
@@ -37,7 +36,7 @@ const Layout = ({ children }) => {
                     <SidebarItem icon={<Boxes size={20} />} text="Publicações" />
                 </Link>
                 <SidebarItem icon={<Receipt size={20} />} text="Finaças" alert/>
-                <hr className="my3 mb-4" />
+                <hr className="my3 my-4" />
                 <SidebarItem icon={<Settings size={20} />} text="Configurações" />
                 <SidebarItem icon={<LifeBuoy size={20} />} text="Help" />
             </Sidebar>

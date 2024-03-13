@@ -6,6 +6,7 @@ import {
     BreadcrumbList,
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
+import { Input } from "@/components/ui/input"           
 
 const Infos = () => {
     return (
@@ -25,7 +26,13 @@ const Infos = () => {
                     </BreadcrumbList>
                 </Breadcrumb>
             </div>
-            <section>
+            <section className="container mt-5">
+                <div className="flex flex-col">
+                    <h1 className="font-semibold text-xl">Sessão Home: </h1>
+                    <div className="grid grid-cols-2 mt-2">
+                        <Input type="text" placeholder="Texto destaque" />
+                    </div>
+                </div>
 
             </section>
         </section>

@@ -150,7 +150,7 @@ const Products = () => {
                     <PackagePlus  className="mr-2 h-4 w-4" /> Criar Produto
                 </Button>
             </div>
-            <section className="container rounded-lg max-h-[700px] overflow-auto">
+            <section className="container rounded-lg max-h-[600px] overflow-auto">
                 <Table>
                     <TableHeader className="bg-slate-200 ">
                         <TableRow>

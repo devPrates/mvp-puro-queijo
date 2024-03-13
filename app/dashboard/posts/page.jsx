@@ -9,9 +9,9 @@ import {
 
 const Posts = () => {
     return (
-        <section>
+        <section className="flex flex-col gap-4">
             <Navbar title="Controle de Publicações" />
-            <div className="p-3">
+            <div className="px-16">
                 <Breadcrumb>
                     <BreadcrumbList>
                         <BreadcrumbItem>

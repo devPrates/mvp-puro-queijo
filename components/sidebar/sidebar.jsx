@@ -45,7 +45,7 @@ export default function Sidebar({ children }) {
             >
               <div className="leading-4">
                 <h4 className="font-semibold">John Doe</h4>
-                <span className="text-xs text-gray-600">johndoe@gmail.com</span>
+                <span className="text-xs text-gray-200">johndoe@gmail.com</span>
               </div>
               <MoreVertical className="text-white" size={20} />
             </div>

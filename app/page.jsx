@@ -1,11 +1,15 @@
-import { Header } from "@/components/header/header";
-import Hero from "@/components/hero/hero";
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <>
       <Header />
-      <Hero />
-    </main>
+      <main className="">
+        <h1>Hello word</h1>
+      </main>
+      <Footer />
+    </>
   );
 }

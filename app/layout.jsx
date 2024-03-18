@@ -14,11 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR" suppressContentEditableWarning>
       <body className={inter.className}>   
-      <ThemeProvider attribute='class' defaltTheme='light'>
-        <Header />
         {children}
-        <Footer />
-      </ThemeProvider>  
       </body>
     </html>
   );

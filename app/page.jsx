@@ -1,8 +1,9 @@
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/Footer";
-import Hero from "./hero/page";
-import Product from "./produtos/page";
+import Product from "../components/produtos/page";
+import Hero from "@/components/hero/page";
+import './globals.css'
 
 export default function Home() {
   return (

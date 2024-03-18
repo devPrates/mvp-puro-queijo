@@ -24,9 +24,10 @@ const Hero = () => {
                                 <Button className="gap-x-2"> Entrar em contato <Send size={18}/> </Button>
                             </Link>
                             <Link href="#produtos">
-                                <Button className="gap-x-2" variant="secondary"> Ver nossos produtos <LuPackage size={24}/> </Button>
+                                <Button className="gap-x-2 text-white" variant="secondary"> Ver nossos produtos <LuPackage size={24}/> </Button>
                             </Link>
                         </div>
+                        <Socials containerStyles="flex gap-x-6 mx-auto"/>
                     </div>
 
                     <div className="hidden xl:flex relative">image</div>

@@ -20,14 +20,14 @@ const Header = () => {
         return() => window.removeEventListener('scroll', scrollYPos)
     })
     return (
-        <header className={`${ header ? 'py-4 bg-white shadow-lg dark:bg-accent' : 'py-6 dark:bg-transparent' } sticky top-0 z-30 transition-all ${ pathname === '/' && 'bg-[#fef9f5]' }`}>
+        <header className={`${ header ? 'py-4 bg-orange-300 shadow-lg dark:bg-accent' : 'py-6 dark:bg-transparent' } sticky top-0 z-30 transition-all ${ pathname === '/' && 'bg-[#fef9f5]' }`}>
             <div className="container mx-auto">
                 <div className="flex justify-between items-center">
                 <Link href='/'>
                     <Image 
-                        src="/logo.svg"
-                        height={54} 
-                        width={54} 
+                        src="/Logo.png"
+                        height={60} 
+                        width={60} 
                         priority
                         alt="logo"
                     />

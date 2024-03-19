@@ -1,7 +1,11 @@
+import Image from "next/image"
 
-const HeroImage = () => {
+
+const HeroImage = ({ containerStyles, imgSrc }) => {
     return (
-        <div>Hello word</div>
+        <div className={`${containerStyles}`}>
+            <Image src={imgSrc} fill priority alt="Imagem Puro Queijo"/>
+        </div>
     )
 }
 export default HeroImage

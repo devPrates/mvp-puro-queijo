@@ -1,6 +1,6 @@
 'use client'
 
-import { RiFacebookFill, RiInstagramFill, RiLinkedinFill } from 'react-icons/ri'
+import { RiFacebookFill, RiInstagramFill, RiLinkedinFill, RiMailSendFill  } from 'react-icons/ri'
 import Link from 'next/link'
 
 const icons = [
@@ -18,7 +18,7 @@ const icons = [
      },
      {
         path: '/',
-        name: <RiInstagramFill /> 
+        name: <RiMailSendFill  /> 
      },
 ]
 

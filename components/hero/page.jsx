@@ -45,7 +45,7 @@ const Hero = () => {
                         />
                         {/* badge 2 */}
                         <BadgeHero 
-                            containerStyles='absolute top-[80%] -left-[1rem]'
+                            containerStyles='absolute top-[85%] -left-[2.5rem]'
                             icon={<RiTodoFill />} 
                             endContNum={6}
                             endCountText='K'
@@ -53,7 +53,7 @@ const Hero = () => {
                         />
                         {/* badge 3 */}
                         <BadgeHero 
-                            containerStyles='absolute top-[55%] -right-8'
+                            containerStyles='absolute top-[40%] -right-24'
                             icon={<RiTeamFill />} 
                             endContNum={9}
                             endCountText='K'
@@ -61,7 +61,7 @@ const Hero = () => {
                         />
                         <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2" ></div>
                             <HeroImage 
-                                imgSrc='/hero/developer.png'
+                                imgSrc='/logo.png'
                                 containerStyles='bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom'
                             />
                         

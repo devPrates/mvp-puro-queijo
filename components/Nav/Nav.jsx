@@ -4,11 +4,13 @@ import { motion } from "framer-motion"
 
 const links = [
     { path: '/', name: 'Home' },
-    { path: '/produtos', name: 'Produtos' },
-    { path: '/contato', name: 'Contato' }
+    { path: '#produtos', name: 'Produtos' },
+    { path: '#about', name: 'Empresa' },
+    { path: '#contato', name: 'Contato' }
 ]
 const Nav = ({ containerStyles, linkStyles, underlineStyles  }) =>{
     const path = usePathname()
+    console.log(path)
     return(
        <nav className={`${containerStyles}`}>
         {links.map((link, index ) => {

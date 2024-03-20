@@ -4,12 +4,14 @@ import Footer from "@/components/footer/Footer";
 import Product from "../components/produtos/page";
 import Hero from "@/components/hero/page";
 import './globals.css'
+import About from "@/components/about/About";
 
 export default function Home() {
   return (
     <ThemeProvider attribute='class' defaltTheme='light'>
         <Header />
           <Hero />
+          <About />
           <Product />
         <Footer />
       </ThemeProvider>  

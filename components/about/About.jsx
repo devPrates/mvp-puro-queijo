@@ -147,7 +147,7 @@ const About = () => {
                                 <div className="text-lg mt-12 xl:mt-8">
                                     {/* Sobre */}
                                     <TabsContent value="sobre">
-                                        <div className="">
+                                        <div className="text-center xl:text-left">
                                             <h3 className="h3 mb-4">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                             </h3>

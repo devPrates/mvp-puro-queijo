@@ -151,14 +151,53 @@ const About = () => {
                                             <h3 className="h3 mb-4">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                             </h3>
-                                            <p className="subtitle max-w-xl max-auto xl:mx-0">
+                                            <p className="subtitle max-w-xl mx-auto xl:mx-0">
                                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, fugit recusandae maiores architecto laboriosam, ea eveniet ullam, temporibus eaque eius quisquam fuga saepe.
                                             </p>
+                                            {/* Icons */}
+                                            <div className="grid xl:grid-cols-2 gap-4 mb-12">
+                                                {infoData.map((item, index) => {
+                                                    return(
+                                                        <div className="flex items-center gap-x-4 mx-auto xl:mx-0" key={index}>
+                                                          <div className="text-primary">{item.icon}</div>  
+                                                          <div>{item.text}</div>  
+                                                        </div>
+                                                    )
+                                                })}
+                                            </div>
                                         </div>
                                     </TabsContent>
+
+
                                     {/* servico */}
                                     <TabsContent value="servico">
-                                        serviço infos
+                                       <div>
+                                        <h3 className="h3 mb-8 text-center xl:text-left">My Awesome Journey</h3>
+                                        {/* Qualifications experience */}
+                                        <div>
+                                            {/* experience */}
+                                            <div>
+                                                <div className='flex gap-x-4 items-center text-[22px] text-primary'>
+                                                    <Briefcase />
+                                                    <h4 className="capitalize font-medium">
+                                                        {getData(qualificationData, 'Experience').title}
+                                                    </h4>
+                                                </div>
+                                                {/* list */}
+                                                <div>
+                                                {getData(qualificationData, 'Experience').data.map((item, index)=>{
+                                                    return(
+                                                        
+                                                    )
+                                                })}
+                                                </div>
+                                            </div>
+                                            {/* Educação */}
+                                            <div>
+                                                Educação
+                                            </div>
+                                        </div>
+                                       </div>
                                     </TabsContent>
 
                                     {/* contato */}

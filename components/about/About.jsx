@@ -62,17 +62,17 @@ const qualificationData = [
         data: [
             {
                 company: 'Puro Queijo',
-                qualification: 'Puro Queijo',
+                role: 'Puro Queijo',
                 years: '2016 - 2024'
             },
             {
                 company: 'Puro Queijo',
-                qualification: 'Puro Queijo',
+                role: 'Puro Queijo',
                 years: '2016 - 2024'
             },
             {
                 company: 'Puro Queijo',
-                qualification: 'Puro Queijo',
+                role: 'Puro Queijo',
                 years: '2016 - 2024'
             },
 
@@ -174,9 +174,9 @@ const About = () => {
                                        <div>
                                         <h3 className="h3 mb-8 text-center xl:text-left">My Awesome Journey</h3>
                                         {/* Qualifications experience */}
-                                        <div>
+                                        <div className="grid md:grid-cols-2 gap-y-8">
                                             {/* experience */}
-                                            <div>
+                                            <div className="flex flex-col gap-y-6">
                                                 <div className='flex gap-x-4 items-center text-[22px] text-primary'>
                                                     <Briefcase />
                                                     <h4 className="capitalize font-medium">
@@ -184,17 +184,50 @@ const About = () => {
                                                     </h4>
                                                 </div>
                                                 {/* list */}
-                                                <div>
+                                                <div className="flex flex-col gap-y-8 ">
                                                 {getData(qualificationData, 'Experience').data.map((item, index)=>{
+                                                    const { company, role, years } = item
                                                     return(
-                                                        
+                                                        <div className="flex gap-x-8 group" key={index}>
+                                                            <div className="h-[84px] w-[1px] bg-border relative ml-2">
+                                                                <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-5 group-hover:translate-y-[84px] transition-all duration-500"></div>
+                                                            </div>
+                                                            <div>
+                                                                <div className="font-semibold text-xl leading-none mb-2">{company}</div>
+                                                                <div className="text-lg leading-none text-muted-foreground mb-4">{role}</div>
+                                                                <div className="text-base font-medium">{years}</div>
+                                                            </div>
+                                                        </div>
                                                     )
                                                 })}
                                                 </div>
                                             </div>
                                             {/* Educação */}
-                                            <div>
-                                                Educação
+                                            <div className="flex flex-col gap-y-6">
+                                                <div className='flex gap-x-4 items-center text-[22px] text-primary'>
+                                                    <GraduationCap size={28} />
+                                                    <h4 className="capitalize font-medium">
+                                                        {getData(qualificationData, 'education').title}
+                                                    </h4>
+                                                </div>
+                                                {/* list */}
+                                                <div className="flex flex-col gap-y-8 ">
+                                                {getData(qualificationData, 'education').data.map((item, index)=>{
+                                                    const { university, qualification, years } = item
+                                                    return(
+                                                        <div className="flex gap-x-8 group" key={index}>
+                                                            <div className="h-[84px] w-[1px] bg-border relative ml-2">
+                                                                <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-5 group-hover:translate-y-[84px] transition-all duration-500"></div>
+                                                            </div>
+                                                            <div>
+                                                                <div className="font-semibold text-xl leading-none mb-2">{university}</div>
+                                                                <div className="text-lg leading-none text-muted-foreground mb-4">{qualification}</div>
+                                                                <div className="text-base font-medium">{years}</div>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                })}
+                                                </div>
                                             </div>
                                         </div>
                                        </div>
@@ -202,7 +235,12 @@ const About = () => {
 
                                     {/* contato */}
                                     <TabsContent value="contato">
-                                        Contato infos
+                                        <div className="text-center xl:text-left">
+                                            <h3 className="h3 mb-8">Tools I use Everyday</h3>
+                                            <div>
+                                                <h4>Skills</h4>
+                                            </div>
+                                        </div>
                                     </TabsContent>
                                 </div>
                         </Tabs>

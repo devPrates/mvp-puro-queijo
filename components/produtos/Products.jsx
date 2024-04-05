@@ -120,7 +120,7 @@ const Product = () => {
                         pagination={{ clickable: true }}
                     >
                         {/* products for slides */}
-                        {ProductData.slice(0.4).map((product, index)=>{
+                        {ProductData.slice(0, 4).map((product, index)=>{
                             return(
                                 <SwiperSlide key={index}>
                                     <ProductCard product={product} />
